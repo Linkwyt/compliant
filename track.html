@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Complaint</title>
+
+<link rel="stylesheet" href="track.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back-btn">
+        ← Back Home
+    </a>
+
+    <div class="card">
+
+        <h1>Track Complaint</h1>
+
+        <p>Enter your Complaint ID to check its status.</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="complaintID"
+                placeholder="Enter Complaint ID (e.g. CMP-1001)"
+            >
+
+            <button onclick="trackComplaint()">
+                Track
+            </button>
+
+        </div>
+
+        <div id="result" class="hidden">
+
+            <div class="info-box">
+                <h3 id="subject">
+                    Hostel Water Supply Issue
+                </h3>
+
+                <p>
+                    Category:
+                    <span id="category">
+                        Accommodation
+                    </span>
+                </p>
+
+                <p>
+                    Complaint ID:
+                    <span id="displayID">
+                        CMP-1001
+                    </span>
+                </p>
+
+                <span id="statusBadge" class="status pending">
+                    Pending
+                </span>
+            </div>
+
+            <div class="timeline">
+
+                <div class="step completed">
+                    Complaint Submitted
+                </div>
+
+                <div class="step completed">
+                    Assigned to Department
+                </div>
+
+                <div class="step active">
+                    Under Review
+                </div>
+
+                <div class="step">
+                    Resolved
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="track.js"></script>
+
+</body>
+</html>

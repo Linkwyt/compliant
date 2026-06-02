@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Complaint</title>
+
+<link rel="stylesheet" href="compliant.css">
+</head>
+<body>
+    <a href="index.html" class="back-btn">
+    ← Back to Home
+</a>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <h1>Student Complaint Form</h1>
+        <p>Submit your concern and track its progress online.</p>
+
+        <form id="complaintForm">
+
+            <div class="grid">
+
+                <div>
+                    <label>Student Name</label>
+                    <input type="text" placeholder="Enter full name" required>
+                </div>
+
+                <div>
+                    <label>Matric Number</label>
+                    <input type="text" placeholder="AMU/CSC/001" required>
+                </div>
+
+            </div>
+
+            <div class="grid">
+
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" placeholder="student@avemaria.edu.ng" required>
+                </div>
+
+                <div>
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+234..." required>
+                </div>
+
+            </div>
+
+            <label>Complaint Category</label>
+
+            <select required>
+                <option value="">Select Category</option>
+                <option>Academic Issues</option>
+                <option>Examination Issues</option>
+                <option>Hostel Accommodation</option>
+                <option>Financial / Fees</option>
+                <option>Library</option>
+                <option>ICT Services</option>
+                <option>Security</option>
+                <option>Student Affairs</option>
+                <option>Health Services</option>
+                <option>Others</option>
+            </select>
+
+            <label>Priority Level</label>
+
+            <select required>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+                <option>Urgent</option>
+            </select>
+
+            <label>Complaint Subject</label>
+
+            <input type="text"
+                   placeholder="Brief summary of complaint"
+                   required>
+
+            <label>Complaint Details</label>
+
+            <textarea
+            id="details"
+            rows="6"
+            maxlength="1000"
+            placeholder="Describe your complaint in detail..."
+            required></textarea>
+
+            <small>
+                <span id="counter">0</span>/1000 characters
+            </small>
+
+            <label>Upload Evidence</label>
+
+            <input type="file">
+
+            <div class="checkbox-area">
+
+                <input type="checkbox" id="anonymous">
+
+                <label for="anonymous">
+                    Submit Anonymously
+                </label>
+
+            </div>
+
+            <div class="checkbox-area">
+
+                <input type="checkbox" required>
+
+                <label>
+                    I confirm that the information provided is accurate.
+                </label>
+
+            </div>
+
+            <div class="buttons">
+
+                <button type="reset" class="secondary">
+                    Clear Form
+                </button>
+
+                <button type="submit" class="primary">
+                    Submit Complaint
+                </button>
+
+            </div>
+
+        </form>
+
+        <div id="successMessage">
+            Complaint Submitted Successfully ✓
+        </div>
+
+    </div>
+
+</div>
+
+<script src="compliant.js"></script>
+
+</body>
+</html>
