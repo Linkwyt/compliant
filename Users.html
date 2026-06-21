@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Users Management</title>
+
+<link rel="stylesheet" href="users.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>Users Management</h1>
+
+        <a href="admin.html" class="back-btn">
+            ← Back to Dashboard
+        </a>
+
+    </header>
+
+    <div class="top-section">
+
+        <div class="user-count">
+            <h2 id="totalUsers">5</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search student..."
+            >
+        </div>
+
+    </div>
+
+    <div class="table-container">
+
+        <table id="userTable">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Matric No</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>AMU/CSC/001</td>
+                    <td>john@amu.edu.ng</td>
+                    <td>
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Mary James</td>
+                    <td>AMU/CSC/002</td>
+                    <td>mary@amu.edu.ng</td>
+                    <td>
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>David Peter</td>
+                    <td>AMU/CSC/003</td>
+                    <td>david@amu.edu.ng</td>
+                    <td>
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="users.js"></script>
+
+</body>
+</html>
